@@ -7,7 +7,7 @@
 </head>
 <body>
   <div>
-    <script src="http://localhost:3001/assets/modules/channel-web/inject.js"></script>
+    <script src="http://localhost:3000/assets/modules/channel-web/inject.js"></script>
     <script type="module">
       function checkCookie(name) {
         return Cookies.get(name) !== undefined;
@@ -21,9 +21,9 @@
       }
       let encerrar = false;
       window.botpressWebChat.init({
-      host: "http://localhost:3001",
+      host: "http://localhost:3000",
       botId: "aaa",
-      extraStylesheet: "http://localhost:3001/assets/modules/channel-web/style.css",
+      extraStylesheet: "http://localhost:3000/assets/modules/channel-web/style.css",
       layoutWidth: "-",
       showPoweredBy: true,
       enableTranscriptDownload: false,

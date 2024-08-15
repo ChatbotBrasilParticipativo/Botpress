@@ -8,7 +8,7 @@ const Footer = () => {
         <span>
           <FormattedMessage
             id="footer.poweredBy"
-            defaultMessage="Feito com amor por unb"
+            defaultMessage="Feito com amor por UnB"
             values={{
               icon: (
                 <i>
