@@ -31,7 +31,6 @@ jobs:
           if [[ $TAG =~ $VALID_TAG ]]; then
             VERSION+=($(echo ${TAG} | sed -r 's/v//'))
             VERSION+=('latest')
-            VERSION+=($(echo ${TAG} | sed -r 's/\./_/g'))
             TAGS+=("${VERSION[@]/#/${DOCKER_IMAGE}:}")
             echo "release=true" >> $GITHUB_ENV
           elif [[ $GITHUB_REF == refs/heads/* ]]; then
